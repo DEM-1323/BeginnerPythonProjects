@@ -52,6 +52,7 @@ def calculate():
             result = 'error'
             expression = ''
     label_result.config(text = result)
+    
 # Calculator Number Buttons
 
 button_decimal = ttk.Button(root, text = '.', command = lambda: add('.'))

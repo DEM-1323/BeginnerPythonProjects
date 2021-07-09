@@ -107,4 +107,24 @@ button_equal.grid(row = 5, column = 3)
 button_clear = ttk.Button(root, text = 'C', command = lambda: clear())
 button_clear.grid(row = 4, column = 0)
 
+# Key Binds
+
+root.bind('0', lambda event: add('0'))
+root.bind('1', lambda event: add('1'))
+root.bind('2', lambda event: add('2'))
+root.bind('3', lambda event: add('3'))
+root.bind('4', lambda event: add('4'))
+root.bind('5', lambda event: add('5'))
+root.bind('6', lambda event: add('6'))
+root.bind('7', lambda event: add('7'))
+root.bind('8', lambda event: add('8'))
+root.bind('9', lambda event: add('9'))
+
+root.bind('/', lambda event: add('/'))
+root.bind('<Shift-*>', lambda event: add('*'))
+root.bind('-', lambda event: add('-'))
+root.bind('<Shift-+>', lambda event: add('+'))
+root.bind('<Return>', lambda event: calculate())
+root.bind('c', lambda event: clear())
+
 root.mainloop()
